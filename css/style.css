@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;700&display=swap');
+:root {
+    --swiper-theme-color: white
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.bold {
+    font-weight: 700;
+}
+.container {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+.section__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.section__title_center {
+    text-align: center;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #00000000;
+    border: 1px solid black;
+    transition: background-color .1s ease, color .1s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+.btn:active {
+    background-color: rgb(73, 73, 73);
+}
+.media {
+    position: relative;
+}
+.media__pict {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.media__pict_cover {
+    object-fit: cover;
+}
+.media__pict_contain {
+    object-fit: contain;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header-nav {
+    display: flex;
+    gap: 30px;
+}
+main {
+    padding-top: 80px;
+    min-height: calc(100vh - 80px);
+}
+section {
+    padding: 50px 0;
+}
+.welcome {
+    height: calc(100vh - 80px);
+}
+.welcome__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: -80px;
+}
+.welcome__title {
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.welcome__btn {
+    width: 220px;
+    height: 60px;
+}
+.welcome__media-block {
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+}
+.welcome__media {
+    width: 300px;
+    height: 500px;
+}
+.welcome__media:nth-child(2) {
+    margin-top: 90px;
+}
+.color-section__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-section__text {
+    max-width: 525px;
+    font-weight: 200;
+}
+.color-section__media {
+    width: 500px;
+    margin-right: 150px;
+}
+.swiper {
+    width: 100%;
+    height: 600px;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 10;
+}
+.swiper-slide__media {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+}
+.swiper-slide__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+}
+.footer {
+    background-color: #1D1D1D;
+    padding: 30px 0;
+}
+.footer * {
+    color: white;
+    
+}
+.footer__inner {
+    display: flex;
+    gap: 100px;
+}
+.footer-columns {
+    display: flex;
+    gap: 50px;
+}
+.footer-column__title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.footer-column__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.footer-column__link {
+    font-size: 16px;
+    font-weight: 200;
+}
+.footer-column__link-social {
+    margin-left: 34px;
+    position: relative;
+}
+.footer-column__link-social_vk::before {
+    content: url('../resources/socials/vk.svg');
+}
+.footer-column__link-social::before {
+    position: absolute;
+    left: -34px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.order-block__input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+.order-block__btn {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.order-block__textarea {
+    resize: vertical;
+    height: 100px;
+}
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    z-index: 10000;
+}
+.modal_active {
+    display: flex;
+}
+.popup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    background-color: white;
+    padding: 58px 10px 10px;
+
+    position: relative;
+}
+.popup__close {
+    position: absolute;
+    width: 48px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}

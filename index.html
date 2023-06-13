@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Крошка</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img src="resources/logo-black.svg" alt="Логотип" class="logo">
+                <nav class="header-nav">
+                    <a href="/" class="header-nav__link">Главная</a>
+                    <a href="/#contacts" class="header-nav__link">Контакты</a>
+                    <a href="/catalog.html" class="header-nav__link">Каталог</a>
+                    <a href="/cart.html" class="header-nav__link">Корзина</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome__inner">
+                    <div class="welcome__text-block">
+                        <h1 class="welcome__title"><span class="bold">Резиновое покрытие</span><br>SBR и EPDM</h1>
+                        <a href="#" class="btn welcome__btn">В каталог</a>
+                    </div>
+                    <div class="welcome__media-block">
+                        <div class="media welcome__media">
+                            <img src="img/detskaya-ploshadka.jpg" alt="Резиновое покрытие 1"
+                                class="media__pict media__pict_cover">
+                        </div>
+                        <div class="media welcome__media">
+                            <img src="img/futbolnaya-ploshadka.jpg" alt="Резиновое покрытие 2"
+                                class="media__pict media__pict_cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="color-section">
+            <div class="container">
+                <h2 class="section__title">Большой выбор цветов</h2>
+                <div class="color-section__inner">
+                    <div class="color-section__text">
+                        Цвет в резиновом покрытии играет важную роль и несет в себе не только эстетическую функцию, но и
+                        функциональное значение.
+                        <br><br>
+                        Каждый цвет имеет свои особенности и влияет на использование и восприятие резинового покрытия
+                        <br><br>
+                        Важно учитывать, что выбор цвета резинового покрытия зависит от конкретных потребностей и целей
+                        проекта. Он может быть связан с функциональными, эстетическими, безопасностными или
+                        коммуникативными аспектами. Комбинирование разных цветов и создание уникальных дизайнов также
+                        дает возможность выделиться и создать уникальную атмосферу на покрытии.
+                    </div>
+                    <img src="img/colors.png" alt="Цвета" class="color-section__media">
+                </div>
+            </div>
+        </section>
+        <section class="works">
+            <div class="container">
+                <h2 class="section__title">Наши работы</h2>
+                <div class="works__inner">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="media swiper-slide__media">
+                                    <img src="img/works/1.jpg" alt="Фото результата"
+                                        class="media__pict media__pict_cover works__work-photo">
+                                </div>
+                                <div class="swiper-slide__name">Детская площадка "Радуга"</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="media swiper-slide__media">
+                                    <img src="img/works/2.jpg" alt="Фото результата"
+                                        class="media__pict media__pict_cover works__work-photo">
+                                </div>
+                                <div class="swiper-slide__name">Детская площадка "Радуга"</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <img src="resources/logo-white.svg" alt="Логотип" class="logo">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <div class="footer-column__title">Разделы</div>
+                            <ul class="footer-column__items">
+                                <li class="footer-column__item">
+                                    <a href="#" class="footer-column__link">Главная</a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <a href="#" class="footer-column__link">Каталог</a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <a href="#" class="footer-column__link">Корзина</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <div class="footer-column__title" id="contacts">Контакты</div>
+                            <ul class="footer-column__items">
+                                <li class="footer-column__item">
+                                    <a href="tel:+79998887766" class="footer-column__link">+7 (999) 888-77-66</a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <a href="mailto:email@gmail.com" class="footer-column__link">email@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <div class="footer-column__title">Соц. сети</div>
+                            <ul class="footer-column__items">
+                                <li class="footer-column__item">
+                                    <a href="https://vk.com" class="footer-column__link footer-column__link-social footer-column__link-social_vk">ВКонтакте</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

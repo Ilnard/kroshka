@@ -1,0 +1,28 @@
+.catalog__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 40px;
+    justify-content: center;
+}
+.item-card {
+    padding: 10px;
+}
+.item-card__media {
+    width: 100%;
+    height: 115px;
+    margin-bottom: 10px;
+}
+.item-card__name {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.item-card__price {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.item-card__btn {
+    width: 100%;
+    height: 50px;
+}
