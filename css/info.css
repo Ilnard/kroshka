@@ -1,0 +1,16 @@
+.info-text__title {
+    padding: 50px 0 10px;
+}
+.info-text__parag {
+    padding: 10px 0;
+}
+.price-list-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+}
+.price-list {
+    border: 1px solid black;
+}
+.price-list-item {
+    padding: 7px;
+}
